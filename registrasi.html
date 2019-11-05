@@ -1,0 +1,288 @@
+<html>
+
+<head>
+    <title>contoh website </title>
+
+    <style>
+    *{box-sizing:border-box
+
+    }
+
+ 
+    .menu li {
+        display: inline-block;
+        margin-right: 10px;
+        color: white;
+    }
+    .menu li a{
+        text-align: center;
+        color: white;
+        display: block;
+        text-decoration: none;
+    }
+
+
+    .header{
+        background-color:dimgray;
+        padding:25px;
+    }
+    body.container-wrapper{
+        display: block;
+        box-sizing: border-box;
+    }
+
+    body.side-navigation-left{
+        width: 50%;
+    }
+    body.side-navigation-righ{
+        width: 50%;
+    }
+    body.col {
+        float: left;
+    
+    }
+    .main{
+        float: left;
+        width: 50%;
+        padding:16px ;
+        overflow:hidden;
+    
+
+    }
+
+    .about{
+        float: left;
+        padding: 16px;
+        width: 50%;
+        overflow:hidden;
+
+    }
+
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .form-radio .row-password:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    .footer{
+       padding: 1;
+    }
+    .footer h5{
+        font-family: inherit;
+        color: white;
+        text-align: center;
+    }
+    .form-group{
+        width: 100%;
+        padding: 12px 20px;
+        border-radius: 4px;
+        
+    }
+
+    .head{
+        text-align: center;
+        text-align-last: center;
+        text-justify: initial;
+        height: 200px;
+        font-size: 30px;
+        padding: 30px;
+    }
+    .main .form-group input{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+         box-sizing: border-box;
+    }
+    .main .form-checkbox{
+        padding: 5px;
+        margin: 10px;
+
+    }
+    
+    .main h2{
+        padding-left: 15px;
+    }
+    .form-radio{
+        padding: 12px 20px;
+
+    }
+    .about .gambar{
+        padding: 14px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+        height: 500px; 
+        width: 500px;
+    }
+    .header nav .menu{
+        list-style:none;
+        margin:0;
+        padding:0;
+        text-align:center;
+
+    }
+    .footer{
+       padding: 1;
+       background-color: black;
+    }
+    .footer h5{
+        font-family: inherit;
+        color:white;
+        text-align: center;
+    }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="head">
+        <h1>My Website</h1>
+    
+
+    </div>
+
+    
+
+    <div class="header">
+        <ul class="menu">
+          <li ><a href="#">Home</a> </li>
+          <li ><a href="#">Contact</a> </li>
+            <li style="float: right;"><a href="#">About</a> </li>
+            <li style="float: right;"><a href="#">News Feed</a> </li>
+            <li style="float: right;"><a href="#">Social</a> </li>
+        </ul>
+
+
+    </div>
+
+       <div class="side-navigation-left"></div>
+       <div class="content"></div>
+
+       <div class="side-navigation-righ"></div>
+
+    <div class="row">
+            <div class="main">
+                <h2>Registrasi</h2>
+                <form>
+                    <div class="form-group">
+                        <div class="input">
+                             Nama<br>
+                               <input type="text" name="Nama" placeholder="Masukkan Nama..">
+                               <div class="text1" style="color: rgb(131, 126, 121);padding: 0px;">
+                                    Nama Lengkap<br>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        Email<br>
+                             <input type="text" name="Alamat Email" placeholder="Masukkan Email..">
+                             <div class="text1" style="color: rgb(167, 162, 157);padding: 0px;">
+                                  Isi dengan email yang valid <br>
+                             </div>
+
+                    </div>
+                    <div class=" form-group">
+                         Alamat<br>
+                              <input type="text" name="Alamat"placeholder="Masukkan Alamat">
+                        <br>
+                    </div>
+                    <div class=" form-group">
+                            Password dan konfirmasi<br>
+                        <div class="column-pas" style="float: left;
+                                                      width: 50%;
+                                                      padding:0px ;
+                                                      overflow:hidden;">
+                                <input type="text" name="password" placeholder="Masukkan Password">
+                            </div>
+                        <div class="colum-pass" style="float: left;
+                                                           width: 50%;
+                                                           padding-left:14px ;
+                                                           overflow:hidden;">
+                                <input type="text" name="password" placeholder="Konfirmasi Password">
+                        </div>
+                    </div>
+                        <div class="form-group">
+                                <p>Pendidikan Terakhir</p>
+                                    <div class="form-select" style="width: 50%;">
+                                            <select name="Pendidikan terakhir" style="border-radius: 2px; width: 200%;height: 30px;">
+                                                <option value="SMA">SMA</option>
+                                                <option value="S1">S1</option>
+                                                <option value="S2">S2</option>
+                                                <option value="D3">D3</option>
+                                            </select>
+
+                                    </div>
+                                    
+                                <br>
+                        </div>
+                        <div class="form-radio">
+                                <p>Jenis Kelamin</p>
+                                <div class ="row-password">
+                                    <div class="col-pas" style="float: left;
+                                    width: 50%;
+                                    padding:14px ;
+                                    overflow:hidden;">
+                                            <input type="radio" name="gender" value="male" checked> Laki laki<br>
+                                    </div>
+                                    <div class="col-pass-1" style="float: left;
+                                    width: 50%;
+                                    padding:14px ;
+                                    overflow:hidden;">
+                                            <input type="radio" name="gender" value="female"> Perempuan<br>
+                                    </div>
+                               </div>
+                        </div>
+
+                        <div class="form-checbox" style="padding: 12px 20px;">
+                            <input type="checkbox" name="cek" value="cek1">saya menyetujui syarat dan ketentuan<br>  
+                     
+                             <div class="submit">
+                                <input type="submit" value="DAFTAR"
+                                style=" 
+                                          background-color: #4CAF50;
+                                          color:white;
+                                          padding: 1px 5px;
+                                          margin-top: 40px;
+                                          border: none;
+                                          border-radius: 5px;
+                                          cursor: pointer;
+                                          height:50px;
+                                          width: 150px;">
+                                
+                             </div>
+                        </div> 
+                </form>
+    
+            
+            </div>
+
+            <div class="about">
+               <div class ="gambar">
+                   <img src="backdrop.jpg" alt="back" >
+               </div>
+                
+           
+            </div>
+    </div>
+          
+
+
+    <div class="footer">
+        <h5>Here it goes the footer</h5>
+    </div>
+
+</body>
+</html>
